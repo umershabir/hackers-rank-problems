@@ -24,7 +24,7 @@ function digonalDifference(arr) {
       rightToLeft += arr[i][arr[i].length - 1 - i]
       
     }
-    return console.log(leftToRight, rightToLeft, rightToLeft - leftToRight)
+    return console.log(Math.abs( rightToLeft - leftToRight))
 }
 
 digonalDifference(arrr)

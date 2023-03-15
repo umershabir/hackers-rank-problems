@@ -6,8 +6,8 @@ function stairCase(st){
         let space = ' '.repeat(j)   
         for(let i = 0; i < st; i++) {
             stairCase  += '#'
-            console.log(space+stairCase)
         }
+        console.log(space+stairCase)
     }
     
 }

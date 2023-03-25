@@ -1,1 +1,1 @@
-# Hackers rank algorithm problems explained.
+# Hackers rank algorithm problems solutions.

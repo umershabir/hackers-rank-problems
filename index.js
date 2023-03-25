@@ -1,16 +1,12 @@
-let numbers = [1, 2, 3, 4, 5];
-
-function miniMaxSum(arrr) {
-  let arr = arrr.sort((a, b) => a - b);
-  let minSum = arr.slice(0, 4).reduce(function (initial, item) {
-    let result = (initial += item);
-    return result;
-  }, 0);
-  let maxSum = arr.slice(1).reduce(function (initial, item) {
-    let result = (initial += item);
-    return result;
-  }, 0);
-  return console.log(minSum + " " + maxSum);
+let birthdayCandles = [4, 4, 3, 2];
+// declare a function which will take input as an array
+function highestCandle(arr) {
+  // declare a variable to find the maximum value in the array by using math max function in javascript.
+  let max = Math.max(...arr);
+  // then to find the maximum value repeated in the array by using the filter method which will filter the array by max value repeaded
+  let highest = arr.filter((a) => a == max);
+  // finally return the length of the repeated highest value in the array
+  return highest.length;
 }
-
-miniMaxSum(numbers);
+//
+highestCandle(birthdayCandles);
